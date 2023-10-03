@@ -11,8 +11,8 @@ public class ElectricPokemon extends BasePokemon{
     }
 
     public static String cheeckOfElectricWeakness(String electricWeakness){
-        if (electricWeakness.equals("Ground")){
-            electricWeakness = "Ground";
+        if (electricWeakness.equals("Grass")){
+            electricWeakness = "Grass";
         }else {
             electricWeakness = "Undefind";
         }
@@ -20,11 +20,6 @@ public class ElectricPokemon extends BasePokemon{
     }
     @Override
     public void Print() {
-        if(electricWeakness.equals("Ground")){
-            this.electricWeakness = "Ground";
-        }else{
-            this.electricWeakness = "undefind";
-        }
         System.out.println(" name: " +  getName() +  " type: " + getType() + " cp: "+ getCp() + " attack: " + getAttack()+ " defense: " +getDefense() + " electricWeakness: " +  cheeckOfElectricWeakness(electricWeakness));
     }
 
